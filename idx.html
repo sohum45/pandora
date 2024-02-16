@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <title>Pandora -Web Player: Music for everyone</title>
+    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container flex bg-black">
+
+        <div class="left  bg-black ">
+            <div class="close"><i class="fa-solid fa-xmark"></i></div>
+            <div class="home grey rounded p-1 m2">
+                <div class="logo"><img src="logo.jpeg" alt="" style="width: 90px; border-radius: 20px;"></div>
+                <ul>
+                    <li><i class="fa-solid fa-house"></i>Home </li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i>Search </li>
+                </ul>
+            </div>
+
+            <div class="library bg-black grey rounded p-1 m2">
+                <div class="heading">
+                    <img src="playlist.svg" alt="" class="invert" style="width: 30px;">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="song-list">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+
+                    <div><a href="https://www.spotify.com/in-en/privacy/"><span>Privacy Center</span></a></div>
+
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a> </div>
+
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+
+                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+
+                    <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener"><span>Cookies</span></a>  
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right grey rounded">
+            <div class="head">
+                <div id="hamburger"><i class="fa-solid fa-bars"></i></div>
+                <div class="nav">
+                    <i class="fa-solid fa-angle-left" style="color: #d9d9d9;"></i><i class="fa-solid fa-angle-right" style="color: #d1d1d1;"></i>
+                </div>
+                <div id="greetingMessage"></div>
+                <div class="button">
+                    <button class="signup">Sign up</button>
+                    <button class="login-btn">Login</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylist">
+              <h1 style="margin-bottom: 20px;">Pandora unlocks   <i class="fa-solid fa-play" style="color: #B197FC;"></i> </h1>
+              <div class="card-container">
+                <!-- my music cards display here -->
+            </div>
+
+              <div class="foot_playlist">
+                    <div>
+                        <ul role="list">
+                            <p class="bkjCej">Company</p>
+                            <a href="https://www.spotify.com/in-en/about-us/contact/" role="link" class="bXljDO" data-encore-id="textLink">
+                                <span class="gfMYqC">About</span></a>
+                            <a href="https://www.lifeatspotify.com/" role="link" class="bXljDO" data-encore-id="textLink">
+                                <span class="gfMYqC">Jobs</span></a>
+                            <a href="https://newsroom.spotify.com/" role="link" class="bXljDO" data-encore-id="textLink">
+                                <span class="gfMYqC">For the Record</span></a>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul role="list">
+                            <p class="bkjCej">Communities</p>
+                            <a href="https://artists.spotify.com/" role="link" class="bXljDO" data-encore-id="textLink">
+                                <span class="gfMYqC">For Artists</span></a>
+                            <a href="https://developer.spotify.com/" role="link" class="bXljDO" data-encore-id="textLink">
+                                <span class="gfMYqC">Developers</span></a>
+                            <a href="https://ads.spotify.com/" role="link" class="bXljDO" data-encore-id="textLink">
+                                <span class="gfMYqC">Advertising</span></a>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul role="list">
+                            <p class="bkjCej">Useful links</p>
+                            <a href="https://support.spotify.com/" role="link" class="bXljDO" data-encore-id="textLink">
+                                <span class="gfMYqC">Support</span></a>
+                            <a href="https://www.spotify.com/in-en/free/" role="link" class="bXljDO" data-encore-id="textLink">
+                                <span class="gfMYqC">Free Mobile App</span></a>
+                        </ul>
+                    </div>
+            </div> 
+           
+            <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+                            
+                        </div>
+                    </div>
+                    <div class="abveBar">
+                        <div class="songInfo"></div>
+
+                        <div class="songbuttn">
+                            <i id="prev" class="fa-solid fa-square-caret-left"></i>
+                            <i id="play" class="fa-solid fa-circle-play"></i>
+                            <i id="pause" id="pause" class="fa-solid fa-pause" style="display: none;"></i>
+                            <i id="next" class="fa-solid fa-square-caret-right"></i>
+                        </div>
+    
+                        <div class="songTime"></div>
+                        <div class="volumeRocker">
+                            <i id="volume" class="fa-solid fa-volume-off" ></i>
+                            <div class="range"><input type="range" name="volume" id="volume" ></div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="player.js"></script>
+</body>
+</html>
